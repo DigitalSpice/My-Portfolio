@@ -6,7 +6,7 @@
   border-bottom: 0px;
   background: $white-color;
   font-weight: 400;
-  color: $dark-blue-text;
+  color: $white-color;
   padding: 0rem 5.6rem;
   margin-bottom: 0;
   top: 0;
@@ -20,12 +20,34 @@
 
   // If you want to set a background image on the hero section, uncomment these with your custom image
 
-  /* background: url("/src/assets/[your-image].png");
+  background: url("assets/LaptopHeadphoneHeader.jpg");
   background-position: center;
-  background-size: cover; */
-
+  background-size: cover;
+  
   @include respond(phone) {
     padding: 0rem $default-font-size;
+  }
+
+  .glass{
+    background: rgba(0, 0, 0, 0.388);
+    box-shadow: 0 8px 40px 260px rgba(0, 0, 0, 0.388);
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 20px;
+    padding: 200px 50px;
+
+    @include respond(tab-land) {
+      box-shadow: 0 8px 40px 255px rgba(0, 0, 0, 0.388);
+    }
+    @include respond(tab-port) {
+      box-shadow: 0 8px 40px 235px rgba(0, 0, 0, 0.388);
+    }
+    @include respond(phone) {
+      box-shadow: 0 8px 40px 225px rgba(0, 0, 0, 0.388);
+    }
+    @include respond(phone-xs) {
+      box-shadow: 0 8px 40px 225px rgba(0, 0, 0, 0.388);
+    }
   }
 
   .hero-title {
