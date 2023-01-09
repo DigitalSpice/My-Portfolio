@@ -29,24 +29,24 @@
   }
 
   .glass{
-    background: rgba(0, 0, 0, 0.388);
-    box-shadow: 0 8px 40px 260px rgba(0, 0, 0, 0.388);
+    background: rgba(0, 0, 0, 0.72);
+    box-shadow: 0 8px 40px 260px rgba(0, 0, 0, 0.72);
     backdrop-filter: blur( 1.5px );
     -webkit-backdrop-filter: blur( 1.5px );
     border-radius: 20px;
     padding: 200px 50px;
 
     @include respond(tab-land) {
-      box-shadow: 0 8px 40px 255px rgba(0, 0, 0, 0.388);
+      box-shadow: 0 8px 40px 255px rgba(0, 0, 0, 0.72);
     }
     @include respond(tab-port) {
-      box-shadow: 0 8px 40px 235px rgba(0, 0, 0, 0.388);
+      box-shadow: 0 8px 40px 235px rgba(0, 0, 0, 0.72);
     }
     @include respond(phone) {
-      box-shadow: 0 8px 40px 225px rgba(0, 0, 0, 0.388);
+      box-shadow: 0 8px 40px 225px rgba(0, 0, 0, 0.69);
     }
     @include respond(phone-xs) {
-      box-shadow: 0 8px 40px 225px rgba(0, 0, 0, 0.388);
+      box-shadow: 0 8px 40px 225px rgba(0, 0, 0, 0.69);
     }
   }
 
